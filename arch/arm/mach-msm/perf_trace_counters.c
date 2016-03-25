@@ -12,6 +12,9 @@
 #include <asm/thread_notify.h>
 #include <linux/uaccess.h>
 #include <linux/debugfs.h>
+#ifdef CONFIG_ARCH_MSM8226
+#include <linux/cpu.h>
+#endif
 #define CREATE_TRACE_POINTS
 #include "perf_trace_counters.h"
 

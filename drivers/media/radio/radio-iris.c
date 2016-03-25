@@ -4410,7 +4410,7 @@ static int iris_fops_release(struct file *file)
 	else if (radio->mode == FM_TRANS)
 		retval = hci_cmd(HCI_FM_DISABLE_TRANS_CMD,
 					radio->fm_hdev);
-	} else if (radio->mode == FM_CALIB) {
+	else if (radio->mode == FM_CALIB) {
 		radio->mode = FM_OFF;
 		return retval;
 	}
